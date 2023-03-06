@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Testing EC2 Docker deployment</h1>
+    <h4>Please enter your first name and last name</h4>
+    <form method="post" action="/">
+        <div class="fullname" style="align-items: center; justify-content: center;">
+            <p>First Name <input name="firstname" type="text"/></p>
+            <p>Last Name <input name="lastname" type="text"/></p>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+    {% endblock %}
+</body>
+</html>
